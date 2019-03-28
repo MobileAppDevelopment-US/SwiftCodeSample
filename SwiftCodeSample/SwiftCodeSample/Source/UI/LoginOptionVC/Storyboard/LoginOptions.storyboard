@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login OptionsVC-->
+        <scene sceneID="ew8-zr-c2u">
+            <objects>
+                <viewController storyboardIdentifier="LoginOptionsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JPS-9W-Szh" customClass="LoginOptionsVC" customModule="SmallProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qAF-O1-7A7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E3n-rf-d97">
+                                <rect key="frame" x="97.5" y="250" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="E3n-rf-d97" secondAttribute="height" multiplier="1:1" id="HJE-5l-dfH"/>
+                                    <constraint firstAttribute="height" constant="180" id="jbz-wl-Xa8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-g3-kse">
+                                <rect key="frame" x="40" y="430" width="295" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5Xk-Kd-cDA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="ActionSelectButton:" destination="JPS-9W-Szh" eventType="touchUpInside" id="Whb-Sl-pr2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E3n-rf-d97" firstAttribute="centerX" secondItem="qAF-O1-7A7" secondAttribute="centerX" id="4FT-0G-Dw5"/>
+                            <constraint firstItem="E3n-rf-d97" firstAttribute="top" secondItem="B7L-24-Mmr" secondAttribute="top" constant="230" id="7mC-kR-dvk"/>
+                            <constraint firstItem="B7L-24-Mmr" firstAttribute="trailing" secondItem="mKh-g3-kse" secondAttribute="trailing" constant="40" id="ibM-H3-Dh4"/>
+                            <constraint firstItem="mKh-g3-kse" firstAttribute="leading" secondItem="B7L-24-Mmr" secondAttribute="leading" constant="40" id="neg-SO-nhd"/>
+                            <constraint firstItem="mKh-g3-kse" firstAttribute="top" secondItem="E3n-rf-d97" secondAttribute="bottom" id="vbw-jy-OBm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B7L-24-Mmr"/>
+                    </view>
+                    <connections>
+                        <outlet property="logoImage" destination="E3n-rf-d97" id="xiC-qO-y6V"/>
+                        <outlet property="selectButton" destination="mKh-g3-kse" id="dgS-Da-K7y"/>
+                        <outlet property="topConstraintLogo" destination="7mC-kR-dvk" id="gJV-B2-E1K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KpO-Ei-6oS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296.80000000000001" y="149.77511244377811"/>
+        </scene>
+    </scenes>
+</document>
